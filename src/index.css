@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} 
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr;
+  
+}
+@media only screen and (min-width: 600px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.files-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+}
+
+.name-input-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 20px;
+  max-width: 200px;
+}
